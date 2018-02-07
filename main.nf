@@ -15,7 +15,7 @@ fastqFiles.into { fastq_qc; fastq_bwa }
 
 infoMessage()
 
-
+/*
 process fastqc {
     input:
         set val(key), file(fastqs) from fastq_qc
@@ -31,7 +31,7 @@ process fastqc {
     fastqc -q $fastqs
     """
 }
-
+*/
 
 process bwa {
     input:
